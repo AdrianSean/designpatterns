@@ -6,3 +6,6 @@ CompositePattern/obj/Debug
 DecoratorPattern/bin/Debug
 DecoratorPattern/bin/Release
 DecoratorPattern/obj/Debug
+
+**/bin
+**/obj
