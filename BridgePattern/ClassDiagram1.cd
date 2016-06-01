@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="1. Bridge pattern here gives us ability to have seperate types of print formatters for different concrete manuscript objects.  We dont want a printing formatter to be tied to the type of manuscript i.e.: we didnt want a book to be only one type of formatter - want to be able to mix n match for any book and formatter.">
+    <Position X="0.552" Y="3.281" Height="1.313" Width="2.794" />
+  </Comment>
+  <Comment CommentText="2. Can extend this by having different types of language for the Text of the concrete manuscript objects and thus have different types of 'implementors' being used against them .. mixing and matching quite easily ">
+    <Position X="0.552" Y="4.698" Height="1.094" Width="2.794" />
+  </Comment>
+  <Comment CommentText="3. Alternative to using Bridge Pattern here is having to have a large inheritance collection of concrete objects with a certain formatter which would be difficult to maintain.">
+    <Position X="3.458" Y="3.281" Height="0.958" Width="2.387" />
+  </Comment>
+  <Comment CommentText="4. WHEN TO USE:  Anytime you are creating a large class hiearchy and you are having to split those classes based on different implementations as well as different abstractions and doing some combination with those.">
+    <Position X="3.448" Y="4.323" Height="0.917" Width="3.158" />
+  </Comment>
+  <Class Name="BridgePattern.FAQ" Collapsed="true">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAEAAAAAAAEAAA=</HashCode>
+      <FileName>Concrete\FAQ.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BridgePattern.Manuscript" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAQA=</HashCode>
+      <FileName>Manuscript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BridgePattern.StandardFormatter" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Formatters\StandardFormatter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BridgePattern.Book" Collapsed="true">
+    <Position X="2.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAgAAAAAAAAAAAAAAAAAAACAAEAAA=</HashCode>
+      <FileName>Concrete\Book.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BridgePattern.TermPaper" Collapsed="true">
+    <Position X="4" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAIAAAAAAAAQAAAAAAAACAAEAAA=</HashCode>
+      <FileName>Concrete\TermPaper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BridgePattern.BackwardsFormatter" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Formatters\BackwardsFormatter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BridgePattern.FancyFormatter" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Formatters\FancyFormatter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="BridgePattern.IFormatter" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IFormatter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
